@@ -832,7 +832,16 @@
       .services-grid { grid-template-columns: 1fr; }
 
       #sobre { grid-template-columns: 1fr; gap: 3rem; }
-      .about-badge { right: 1rem; bottom: 1rem; }
+      .about-badge {
+        position: static;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem auto 0;
+        border-radius: 12px;
+      }
+      .about-img-box { aspect-ratio: 1/1; max-width: 320px; margin: 0 auto; }
+      .about-visual { display: flex; flex-direction: column; align-items: center; }
 
       .testimonials-header { grid-template-columns: 1fr; gap: 1rem; }
       .testimonials-grid { grid-template-columns: 1fr; }
@@ -894,7 +903,7 @@
           <span class="photo-icon">🦷</span>
         </div>
         <p class="photo-label">Dra. Livya Paim Lopes</p>
-        <p class="photo-sublabel">CRO-RS · Cirurgiã-Dentista</p>
+        <p class="photo-sublabel">CRO-RS 33361 · Cirurgiã-Dentista</p>
       </div>
       <div class="hero-stats hero-stats-desktop">
         <div class="stat">
@@ -992,7 +1001,7 @@
         Com anos de experiência e centenas de pacientes atendidos em Passo Fundo, a Dra. Livya combina técnicas modernas com um cuidado humano que faz toda a diferença na hora de sentar na cadeira.
       </p>
       <div class="about-credentials">
-        <div class="credential">Cirurgiã-Dentista – CRO-RS</div>
+        <div class="credential">Cirurgiã-Dentista – CRO-RS 33361</div>
         <div class="credential">Especialista em Dentística e Cirurgia Oral Menor</div>
         <div class="credential">Habilitada em Botox e Harmonização Orofacial</div>
         <div class="credential">Membro da Associação Brasileira de Odontologia</div>
